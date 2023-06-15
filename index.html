@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brand Name</title>
+    
+    <style>
+
+
+/* Global Styles */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; } /* Header */ header { background-color: #FFFFFF; /* White */ padding: 20px; display: flex; align-items: center; justify-content: space-between; } .logo svg { width: 50px; height: auto; } .menu-icon { display: none; /* Hide menu icon by default */ cursor: pointer; font-size: 24px; color: #000000; /* Black */ } .menu { display: flex; justify-content: center; list-style-type: none; } .menu li { margin: 0 10px; } .menu a { text-decoration: none; color: #000000; /* Black */ } /* Responsive Styles */ @media screen and (max-width: 768px) { .menu { display: none; /* Hide navigation by default on smaller screens */ } .menu-icon { display: block; /* Show menu icon on smaller screens */ } .menu-icon:hover { color: #2E1A46; /* Dark purple */ } .menu-toggle:checked ~ .menu { display: flex; /* Show navigation when menu is toggled */ flex-direction: column; text-align: center; background-color: #FFFF00; /* Yellow */ padding: 10px; position: absolute; top: 60px; right: 20px; width: 200px; } .menu-toggle:checked ~ .menu li { margin: 10px 0; } } @media screen and (max-width: 480px) { .logo svg { width: 40px; } }
+
+/* Hero Section */
+.hero {
+    background-color: #2E1A46; /* Dark purple */
+    color: #FFFF00; /* Yellow */
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* 3 Reasons to Believe */
+.reasons {
+    background-color: #FFFF00; /* Yellow */
+    color: #000000; /* Black */
+    padding: 50px;
+}
+
+.reasons ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* About Us */
+.about {
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sustainability and Sourcing */
+.sustainability {
+    background-color: #2E1A46; /* Dark purple */
+    color: #FFFF00; /* Yellow */
+    padding: 50px;
+}
+
+.sustainability h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
+    padding: 50px;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 30px;
+    }
+    
+    .reasons,
+    .about,
+    .sustainability,
+    .testimonials {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 20px;
+    }
+    
+    .reasons,
+    .about,
+    .sustainability,
+    .testimonials {
+        padding: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+<header> <div class="logo"> <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"> <circle cx="50" cy="50" r="45" fill="#5D9949"/> <path d="M45.8,19.3C41.4,9.5,29.4,4.3,19.5,8.7c-9.8,4.4-14.9,16.4-10.6,26.2l7.7,17c1.3,2.9,3.9,4.8,7,5.2c6.6,0.7,12.9-1.7,17.5-6.3c2.3-2.3,3.8-5.1,4.3-8.3L45.8,19.3z" fill="#568203"/> <ellipse cx="37.3" cy="64.5" rx="12.5" ry="10" fill="#568203"/> <ellipse cx="62.7" cy="64.5" rx="12.5" ry="10" fill="#568203"/> </svg> </div> <nav> <input type="checkbox" id="menu-toggle"> <label for="menu-toggle" class="menu-icon">&#9776;</label> <ul class="menu"> <li><a href="#about">About Us</a></li> <li><a href="#reasons">Reasons to Believe</a></li> <li><a href="#sustainability">Sustainability</a></li> <li><a href="#testimonials">Testimonials</a></li> <li><a href="#contact">Contact</a></li> </ul> </nav> </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience the Pure Essence of Nature's Goodness with Our Sustainable Avocado and Olive Oil</h1>
+        </div>
+    </section>
+
+    <!-- 3 Reasons to Believe -->
+    <section class="reasons">
+        <div class="reasons-content">
+            <h2>3 Reasons to Believe</h2>
+            <ul>
+                <li>Uncompromising Quality: Crafted with utmost care and dedication, our avocado and olive oil are sourced from the finest, sustainably-grown fruits in Kenya, ensuring unparalleled quality and flavor.</li>
+                <li>Eco-Friendly Commitment: We are deeply committed to sustainability, using rain-fed irrigation methods and environmentally-friendly practices throughout our production process, minimizing our impact on the planet.</li>
+                <li>Health and Well-being: Our premium oils are rich in heart-healthy monounsaturated fats and essential nutrients, supporting your well-being while enhancing the flavors of your favorite dishes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At [Brand Name], we are passionate about delivering the highest-quality, sustainably-sourced avocado and olive oil to health-conscious consumers in the USA. Guided by our mission to revolutionize the cooking oil market, we prioritize transparency, ethical practices, and the well-being of both our customers and the environment. With each bottle, we aim to provide a pure and authentic taste that elevates your culinary creations, while making a positive impact on the world around us.</p>
+        </div>
+    </section>
+
+    <!-- Sustainability and Sourcing -->
+    <section class="sustainability">
+        <div class="sustainability-content">
+            <h2>Sustainability and Sourcing</h2>
+            <p>At [Brand Name], sustainability is at the heart of everything we do. We carefully select rain-fed fruits from our partner farms in Kenya, ensuring a minimal ecological footprint. Our commitment to ethical sourcing means that every drop of our avocado and olive oil is derived from sustainably grown and harvested fruits, protecting the land and supporting local communities. We believe in full transparency, allowing you to trace the journey of our oils from farm to bottle, knowing that you are making a conscious and sustainable choice for your well-being and the environment.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"I've finally found the perfect olive oil! [Brand Name]'s commitment to sustainability and premium quality is truly remarkable. Not only does their oil elevate the flavors of my dishes, but it also gives me peace of mind, knowing that I'm supporting a brand that cares about the environment." - Sarah W., California</p>
+            </div>
+            <div class="testimonial">
+                <p>"As a health-conscious individual, finding a high-quality avocado oil was important to me. [Brand Name]'s oil exceeded my expectations. The rich, smooth taste and the fact that it's sustainably sourced make it my go-to choice for all my cooking needs. Highly recommended!" - Mark T., New York</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the website structure -->
+
+    <!-- JavaScript files or links can be included here if needed -->
+
+    <footer>
+        <center><p>&copy; 2023 Your Brand Name. All rights reserved.</p></center>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
